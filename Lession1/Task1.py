@@ -12,4 +12,4 @@ while n1 <= n:
         n1 += 2
     else:
         n1 += 2
-print ("Сумма чисел=", sum_num)
+print ("Сумма чисел=", sum_num) 
