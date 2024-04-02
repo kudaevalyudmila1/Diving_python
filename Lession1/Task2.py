@@ -9,7 +9,6 @@ IGNORE = 1582
 year = int (input("Введите год позже 1582:"))
 if year < IGNORE:
     print("Слишком ранний период")
-elif year % 4 != 0: 
-    print(year, "не високосный год")
-elif year % 400 == 0 and year % 100 != 0:
+elif year % 4 == 0 or (year % 400 == 0 and year % 100 != 0):
     print (year, " високосный год")
+else: print (year, "не високосный год")
