@@ -9,19 +9,20 @@ from fractions import Fraction
 fract1 = input("Введите первую дробь (в виде a/b): ")
 fract2 = input("Введите вторую дробь (в виде a/b): ")
 
-numer1, denominator1 = fract1.split('/')
-numer1 = int(numer1)
-denominator1 = int(denominator1)
+num1 = fract1.split(sep= '/')
+num2 = fract2.split(sep= '/')
 
-numer2, denominator2 = fract2.split('/')
-numer2 = int(numer2)
-denominator2 = int(denominator2)
+chisl = int(num1[0]) * int(num2[1]) + int(num2[0]) * int(num1[1])
+znam = int(num1[1]) * int(num2[1])
+sum1 = str(chisl) + '/' + str(znam)
+print(f'Сумма дробей равна:  {sum1}')
 
-fract1 = Fraction(numer1, denominator1)
-fract2 = Fraction(numer2, denominator2)
+multiplication = str(int(num1[0])*int(num2[0])) + '/' + str(int(num1[1])*int(num2[1]))
+print(f'Произведение дробей равно: {multiplication}')
 
-sum_fraction = fract1 + fract2
-multiplication_fraction = fract1 * fract2
+print('')
+x = Fraction(fract1)
+y = Fraction(fract2)
 
-print("Сумма дробей:", sum_fraction)
-print("Произведение дробей:", multiplication_fraction)
+print(f'Сумма дробей равна: {x+y}')
+print(f'Произведение дробей равно: {x*y}')
