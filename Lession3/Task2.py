@@ -12,10 +12,10 @@ data = input('Введите данные: ')
 #    print(f'{data} - целое число')
 
 if data.isdecimal():
-    print(f'{data} - целое число')
+    print(f'{int(data)} - целое число')
 else:
     try:
-        print(f'{data} - вещественное число')
+        print(f'{float(data)} - вещественное число')
     except ValueError:
         if data.lower() != data:
             print(data.lower())
