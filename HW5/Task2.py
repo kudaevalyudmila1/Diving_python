@@ -1,22 +1,27 @@
-def file_path(text: str):
-    """Функция возвращает кортеж из трёх элементов: путь, имя файла
-      расширение файла.
-    """
-
-    *_, file = text.split('/')
-    *_, extension = file.split('.')
-    file_name = file[:-(len(extension)+1)]
-    url = text[:-(len(file)+1)]
-    return url, file_name, extension
+"""
+Напишите однострочный генератор словаря, который
+ принимает на вход три списка одинаковой длины:
+имена str, ставка int, премия str с указанием процентов вида “10.25%”.
+В результате получаем словарь с именем в качестве ключа и суммой премии 
+в качестве значения. Сумма рассчитывается как ставка умноженная на процент премии
+"""
 
 
-if __name__ == '__main__':
-    text = "https://proprikol.ru/wp-content/uploads/2020/02/porodistye-sobaki-krasivye-kartinki-31.jpg"
-    text1 = "e:/Рабочий стол/Gb/python_dataeng/pyth_dataeng/homework5/task1.py"
-    text2 = "e:/Рабочий стол/Gb/python_dataeng/pyth_dataeng/homework5/task1-31.jpg.py"
-    print(file_path(text))
-    print(file_path(text1))
-    print(file_path(text2))
+names = ["Oleg", "Vladimir", "Anton"]
+rates = [60_000, 75_000, 85_000]
+percents = ['10.25%', '8.0%', '4.5%']
+calculate_bonus = {names: rates * float(percents[:-1]) for names, rates, percents in zip(names, rates, percents)}
+    
+print(*calculate_bonus.items())
+
+
+
+
+
+
+
+
+
 
 
 
