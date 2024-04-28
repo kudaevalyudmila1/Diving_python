@@ -12,7 +12,7 @@ def fibonachi_number(n):
         a, b = b, a + b
 
 
-num = int(input('Введите число  для расчетапоследовательности Фибоначчи:'))
+num = int(input('Введите число  для расчета последовательности Фибоначчи:'))
 result = [i for i in fibonachi_number(num)]
 print(result)
    
