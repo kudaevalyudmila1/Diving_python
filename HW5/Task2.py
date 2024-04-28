@@ -11,7 +11,6 @@ names = ["Oleg", "Vladimir", "Anton"]
 rates = [60_000, 75_000, 85_000]
 percents = ['10.25%', '8.0%', '4.5%']
 calculate_bonus = {names: rates * float(percents[:-1]) for names, rates, percents in zip(names, rates, percents)}
-    
 print(*calculate_bonus.items())
 
 
