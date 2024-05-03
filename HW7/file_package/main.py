@@ -1,4 +1,4 @@
-from HW7 import Sorting_file
+from file_package import Generete_file
 
 if __name__ == '__main__':
-    Task2.guess_number(1, 2, 3)
+    Generete_file.generate_number_file(10, "data.txt")
