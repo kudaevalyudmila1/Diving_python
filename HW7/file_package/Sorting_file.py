@@ -27,4 +27,4 @@ def sort_files(directory):
 
         
 if __name__ == '__main__':
-    sort_files('new_files')
+    sort_files('files')
