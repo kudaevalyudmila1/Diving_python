@@ -15,8 +15,8 @@ def generate_with_dictionary(dictionary: dict):
 
 if __name__ == '__main__':
     d = {
-        'py': 10,
-        'jpeg': 5,
+        'png': 10,
+        'jpg': 5,
         'txt': 11,
         'doc': 10,
     }
