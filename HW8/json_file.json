@@ -1,16 +1,12 @@
 {
-    "DIRECTORY - directory":[
-        "FILE - Generate_files.py = 1355 byte"
-    ],
+    "DIRECTORY - directory":[],
     "DIRECTORY - directory\\sub_directory":[
+        "FILE - csv_file.csv = 898 byte",
         "FILE - cvollwirgzzgpyykacup.txt = 3364 byte",
         "FILE - db.csv = 0 byte",
         "FILE - db.json = 2331 byte",
         "FILE - db.pickle = 2340 byte",
         "FILE - ekjkrjtomooummtr.txt = 1051 byte",
-        "FILE - File_to_csv.py = 378 byte",
-        "FILE - File_to_json.py = 852 byte",
-        "FILE - Json_to_pickle.py = 528 byte",
         "FILE - lniqjpswhkimptsikwgveucson.txt = 2093 byte",
         "FILE - lxropzfghepbyqxwrillmn.txt = 3033 byte",
         "FILE - molhljkwbavjhlrmlsfygxilswyskg.txt = 1636 byte",
@@ -22,6 +18,10 @@
         "FILE - res1.txt = 2319 byte",
         "FILE - ukxppkleoquvnhtvuh.txt = 4006 byte",
         "FILE - wqfhsql.txt = 2153 byte",
-        "FILE - xzdzflrnanwah.txt = 2850 byte"
+        "FILE - xzdzflrnanwah.txt = 2850 byte",
+        "FILE - __init__.py = 77 byte"
+    ],
+    "DIRECTORY - directory\\sub_directory\\__pycache__":[
+        "FILE - __init__.cpython-311.pyc = 275 byte"
     ]
 }

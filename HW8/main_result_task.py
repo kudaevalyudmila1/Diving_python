@@ -1,4 +1,4 @@
-from sub_directory import Generete_files
+from HW8  import Generate_files
 
 if __name__ == '__main__':
-    Generete_files.generate_number_file(10, "data.txt")
+    generate_files('txt', 'sub_directory')
